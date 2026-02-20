@@ -331,7 +331,7 @@ export default function Home() {
             <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse at 72% 50%, rgba(201,168,76,0.1) 0%, transparent 65%)" }} />
 
             {/* Content */}
-              <div className="w-[100%] px-[8%] z-10 flex flex-col-reverse md:flex-row items-center gap-6 fade-up justify-center">
+              <div className="w-[100%] px-[8%] z-10 flex flex-col-reverse md:flex-row items-center gap-6 fade-up justify-center" style={{ paddingBottom: 48 }}>
               <div style={{ zIndex: 2, maxWidth: 680 }} className="fade-up">
                 <div className="sans" style={{
                   color: "#C9A84C", fontSize: "0.65rem", letterSpacing: "0.35em",
@@ -359,11 +359,11 @@ export default function Home() {
                 }}>
                   {heroData?.subtext}
                 </p>
-                <div style={{ display: "flex", gap: 16, flexWrap: "wrap" }}>
-                  <button className="btn-gold" onClick={() => setPage("customizer")}>
+                <div className="flex flex-col md:flex-row gap-4 md:gap-4" style={{ width: "100%", maxWidth: 480 }}>
+                  <button className="btn-gold md:inline-flex flex-1 md:flex-none justify-center" onClick={() => setPage("customizer")}>
                     <Sparkles size={13} /> {t.hero.cta1}
                   </button>
-                  <button className="btn-outline" onClick={() => setPage("shop")}>
+                  <button className="btn-outline md:inline-flex flex-1 md:flex-none justify-center" onClick={() => setPage("shop")}>
                     {t.hero.cta2}
                   </button>
                 </div>
