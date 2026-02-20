@@ -10,14 +10,9 @@ export default function Footer({ t }) {
       color: "rgba(250,246,239,0.65)",
       padding: "60px 8% 36px",
     }}>
-      <div style={{
-        display: "grid",
-        gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-        gap: 40,
-        marginBottom: 48,
-      }}>
+      <div className="flex flex-col md:flex-row md:justify-center md:items-center" style={{ gap: 60, marginBottom: 48 }}>
         {/* Brand */}
-        <div>
+        <div className="md:flex md:flex-col md:items-center" style={{ gap: 16 }}>
           <Image
             src="/logo.png"
             alt="Creatively Yours by Mugdha"
@@ -52,7 +47,7 @@ export default function Footer({ t }) {
         </div> */}
 
         {/* Contact */}
-        <div>
+        <div className="flex flex-col items-start md:items-center" style={{ justifyContent: "center" }}>
           <div className="sans" style={{
             fontSize: "0.62rem", letterSpacing: "0.2em", textTransform: "uppercase",
             color: "#C9A84C", marginBottom: 16,
@@ -89,19 +84,19 @@ export default function Footer({ t }) {
             </a>
           </div>
           <p className="sans" style={{ fontSize: "0.7rem", marginTop: 12, lineHeight: 1.7 }}>
-            Orders & enquiries via WhatsApp only.
+            Orders & enquiries via WhatsApp/Instagram only.
           </p>
         </div>
       </div>
 
       <hr style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.08)", marginBottom: 24 }} />
 
-      <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
+      <div className="flex flex-col" style={{ gap: 8 }}>
         <p className="sans" style={{ fontSize: "0.62rem", letterSpacing: "0.06em" }}>
           {t.footer.rights}
         </p>
         <p className="sans" style={{ fontSize: "0.62rem", letterSpacing: "0.06em" }}>
-          Designed with 🌸 for Mugdha
+          Designed with ❤️ for Mugdha
         </p>
       </div>
     </footer>
