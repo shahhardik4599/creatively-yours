@@ -31,7 +31,6 @@ export let CATEGORIES = DEFAULT_CATEGORIES;
  */
 export function buildCategoriesFromContentful(contentfulCategoryKeys) {
   if (!contentfulCategoryKeys || contentfulCategoryKeys.length === 0) {
-    console.warn("⚠️ No categories provided, using defaults");
     return DEFAULT_CATEGORIES;
   }
 
@@ -42,13 +41,11 @@ export function buildCategoriesFromContentful(contentfulCategoryKeys) {
     if (translation) {
       categories.push({ key: categoryKey, label: translation });
     } else {
-      console.warn(`⚠️ No translation found for category: ${categoryKey}`);
       // Still add it with the key as fallback
       categories.push({ key: categoryKey, label: { en: categoryKey, hi: categoryKey, gu: categoryKey } });
     }
   });
 
-  console.log("✅ Built categories from Contentful:", categories);
   CATEGORIES = categories;
   return categories;
 }
