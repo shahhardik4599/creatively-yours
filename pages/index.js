@@ -370,7 +370,7 @@ export default function Home() {
               </div>
 
               {/* Hero image panel */}
-              <div className="w-full md:w-[min(420px,46vw)] md:max-w-[560px] h-80 md:h-[min(420px,42vh)] flex items-center justify-center" style={{ transform: "translateY(-10%)" }}>
+              <div className="w-full md:w-[min(420px,46vw)] md:max-w-[560px] pt-[100px] md:h-100% flex items-center justify-center" style={{ transform: "translateY(-10%)" }}>
                 <ProductImage
                   src={heroData?.heroImage}
                   alt="heroImage"
