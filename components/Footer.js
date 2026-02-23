@@ -6,7 +6,7 @@ const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "919999999999
 export default function Footer({ t }) {
   return (
     <footer style={{
-      background: "#3B1F0E",
+      background: "white",
       color: "rgba(250,246,239,0.65)",
       padding: "60px 8% 36px",
     }}>
@@ -20,7 +20,7 @@ export default function Footer({ t }) {
             height={56}
             style={{ objectFit: "contain", height: 48, width: "auto", marginBottom: 16, filter: "brightness(1.2)" }}
           />
-          <p className="sans" style={{ fontSize: "0.72rem", lineHeight: 1.8, maxWidth: 240 }}>
+          <p className="sans" style={{ color: "#a23912", fontSize: "0.72rem", lineHeight: 1.8, maxWidth: 240 }}>
             {t.footer.tagline}
           </p>
         </div>
@@ -83,15 +83,15 @@ export default function Footer({ t }) {
               <Instagram size={13} /> {t.footer.instagram || "Instagram"}
             </a>
           </div>
-          <p className="sans" style={{ fontSize: "0.7rem", marginTop: 12, lineHeight: 1.7 }}>
+          <p className="sans" style={{ color: "#a23912", fontSize: "0.7rem", marginTop: 12, lineHeight: 1.7 }}>
             Orders & enquiries via WhatsApp/Instagram only.
           </p>
         </div>
       </div>
 
-      <hr style={{ border: "none", borderTop: "1px solid rgba(255,255,255,0.08)", marginBottom: 24 }} />
+      <hr style={{ border: "none", borderTop: "1px solid #ece4cb", marginBottom: 24 }} />
 
-      <div className="flex flex-col" style={{ gap: 8 }}>
+      <div className="flex flex-col" style={{ color: "#a23912", gap: 8 }}>
         <p className="sans" style={{ fontSize: "0.62rem", letterSpacing: "0.06em" }}>
           {t.footer.rights}
         </p>

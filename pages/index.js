@@ -321,7 +321,7 @@ export default function Home() {
           {/* Hero */}
           <section style={{
             position: "relative", minHeight: "92vh",
-            background: "linear-gradient(135deg, #1E0E07 0%, #3B1F0E 45%, #5C3317 75%, #7A4520 100%)",
+            background: "linear-gradient(135deg, #e3f2fd 0%, #ffffff 50%, #fce4ec 100%)",
             display: "flex", alignItems: "center", overflow: "hidden",
           }}>
             {/* Decorative rings */}
@@ -334,7 +334,7 @@ export default function Home() {
               <div className="w-[100%] px-[8%] z-10 flex flex-col-reverse md:flex-row items-center gap-6 fade-up justify-center" style={{ paddingBottom: 48 }}>
               <div style={{ zIndex: 2, maxWidth: 680 }} className="fade-up">
                 <div className="sans" style={{
-                  color: "#C9A84C", fontSize: "0.65rem", letterSpacing: "0.35em",
+                  color: "#C9A84C", fontSize: "1.2rem", letterSpacing: "0.35em",
                   textTransform: "uppercase", marginBottom: 28,
                   display: "flex", alignItems: "center", gap: 14,
                 }}>
@@ -342,19 +342,19 @@ export default function Home() {
                   {heroData?.smalltext}
                 </div>
                 <h1 style={{
-                  color: "#FAF6EF", fontSize: "clamp(2.8rem, 5.5vw, 5.2rem)",
-                  fontWeight: 300, lineHeight: 1.1, marginBottom: 6,
+                  color: "#a23912", fontSize: "clamp(2.8rem, 5.5vw, 5.2rem)",
+                  fontWeight: 500, lineHeight: 1.1, marginBottom: 6,
                 }}>
                   {heroData?.mainTitle1}
                 </h1>
                 <h1 style={{
-                  color: "#C9A84C", fontSize: "clamp(2.8rem, 5.5vw, 5.2rem)",
-                  fontWeight: 300, fontStyle: "italic", lineHeight: 1.1, marginBottom: 30,
+                  color: "#a23912", fontSize: "clamp(2.8rem, 5.5vw, 5.2rem)",
+                  fontWeight: 500, fontStyle: "italic", lineHeight: 1.1, marginBottom: 30,
                 }}>
                   {heroData?.mainTitle2}
                 </h1>
                 <p className="sans" style={{
-                  color: "rgba(250,246,239,0.65)", fontSize: "0.88rem",
+                  color: "#C9A84C", fontSize: "0.88rem",
                   lineHeight: 1.85, maxWidth: 480, marginBottom: 48, fontWeight: 300,
                 }}>
                   {heroData?.subtext}
@@ -460,11 +460,11 @@ export default function Home() {
                   background: "var(--cream)", padding: "36px",
                   border: "1px solid rgba(201,168,76,0.12)",
                 }}>
-                  <div style={{ display: "flex", gap: 3, marginBottom: 18 }}>
+                  {/* <div style={{ display: "flex", gap: 3, marginBottom: 18 }}>
                     {[...Array(tm.rating)].map((_, j) => (
                       <Star key={j} size={13} fill="#C9A84C" color="#C9A84C" />
                     ))}
-                  </div>
+                  </div> */}
                   <p style={{ fontSize: "1.05rem", fontStyle: "italic", lineHeight: 1.75, marginBottom: 24, color: "#555" }}>
                     "{tm.text}"
                   </p>
@@ -484,13 +484,13 @@ export default function Home() {
 
           {/* CTA Banner */}
           <section style={{
-            background: "linear-gradient(135deg, #3B1F0E 0%, #5C3317 100%)",
+            background: "#faf6ef",
             padding: "64px 8%", textAlign: "center",
           }}>
-            <h2 style={{ color: "#FAF6EF", fontSize: "2rem", fontWeight: 300, marginBottom: 8 }}>
+            <h2 style={{ color: "#a23912", fontSize: "2rem", fontWeight: 300, marginBottom: 8 }}>
               Can't find what you're looking for?
             </h2>
-            <p className="sans" style={{ color: "rgba(250,246,239,0.6)", fontSize: "0.8rem", marginBottom: 36 }}>
+            <p className="sans" style={{ color: "#a23912", fontSize: "0.8rem", marginBottom: 36 }}>
               Build your own bespoke hamper — every detail, your way.
             </p>
             <button className="btn-gold" onClick={() => setPage("customizer")}>
